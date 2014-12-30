@@ -1,0 +1,15 @@
+
+/* Basscss UI Utility Button Sizes */
+
+.button-small {
+  padding: .25em $space-1;
+}
+
+.button-big {
+  line-height: 1.625;
+}
+
+.button-narrow {
+  padding-left: $space-1;
+  padding-right: $space-1;
+}

@@ -1,0 +1,10 @@
+
+/* Basscss UI Utility Disclosure States */
+
+.disclosure-show {
+  display: none;
+}
+
+.is-active .disclosure-show {
+  display: block;
+}

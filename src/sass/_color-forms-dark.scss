@@ -1,0 +1,38 @@
+
+/* Basscss Color Forms Dark */
+
+.field-dark {
+  color: white;
+  background-color: $darken-3;
+  border: 1px solid $darken-1;
+  border-radius: $border-radius;
+}
+
+.field-dark::placeholder {
+  color: rgba(#fff,.75);
+}
+
+.field-dark:focus {
+  outline: 0;
+  border: 1px solid rgba(#fff,.5);
+}
+
+.field-dark:read-only:not(select) {
+  background-color: rgba(#fff,.25);
+}
+
+.field-dark:invalid {
+  border-color: $red;
+}
+
+.field-dark.is-success {
+  border-color: $green;
+}
+
+.field-dark.is-warning {
+  border-color: $yellow;
+}
+
+.field-dark.is-error {
+  border-color: $red;
+}

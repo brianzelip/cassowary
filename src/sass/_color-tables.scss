@@ -1,0 +1,9 @@
+
+/* Basscss Color Tables */
+
+.table-light th,
+.table-light td {
+  border-bottom-style: solid;
+  border-bottom-width: $border-width;
+  border-bottom-color: $border-color;
+}
