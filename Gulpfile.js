@@ -58,7 +58,7 @@ gulp.task('serve_locally', function() {
     .pipe(webserver({
       livereload: true,
       directoryListing: false,
-      open: true
+      open: false
     }));
 });
 

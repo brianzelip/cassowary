@@ -4,7 +4,8 @@
 @import 'base-reset';
 @import 'base-typography';
 
-@import 'custom';
+// change the number here to load particular styles
+@import 'custom.2';
 
 @import 'base-forms';
 @import 'base-buttons';
@@ -28,5 +29,8 @@
 @import 'color-tables';
 @import 'color-buttons';
 @import 'colors.tachyons';
-@import 'color-borders';
 
+@import '_borders.tachyons';
+@import '_border_colors.tachyons';
+@import '_border_styles.tachyons';
+@import '_border_widths.tachyons';

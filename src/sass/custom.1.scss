@@ -1,0 +1,36 @@
+// Styles for index.1.html
+header {
+  background-image: url('../assets/lake.jpeg');
+  background-position: 50% 50%;
+  background-size: cover;
+  height: 55vh;
+}
+
+.h0 {
+  font-size: 8vw;
+  color: $blue;
+}
+
+.nav {
+  display: flex;
+  min-height: 7rem;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  align-items: stretch;
+}
+
+.nav-item {
+  width: 50%;
+}
+
+.nav-item-link {
+  display: block;
+  padding: 2.5rem 0;
+  font-size: 2.5rem;
+}
+
+.nav-item-link:hover {
+  background-color: $near-white;
+  text-decoration: none;
+}
