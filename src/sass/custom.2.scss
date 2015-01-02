@@ -17,6 +17,11 @@
 
 }
 
+.border-box {
+  box-sizing: border-box;
+}
+
+
 /* extending Basscss' _base_typography.scss */
 .serif {
   font-family: $serif-font-family;
