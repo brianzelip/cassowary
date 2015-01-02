@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic|Merriweather+Sans:400,300,300italic,400italic,700,700italic,800,800italic">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/jquery.slick/1.3.15/slick.css">
     <link rel="stylesheet" href="css/style.min.css">
     <title>Cassowary Conservation Project</title>
     <meta name="author" content="Brian Zelip">
@@ -40,10 +41,12 @@
       </div>
     </header>
 
-    <section class="mt4">
+    <section class="mt4" id="hero">
       <div class="container">
-        <div>
-          <img src="assets/lake.jpeg" alt="" class="ba b--light-blue bw3 border-box">
+        <div class="slick-carousel ba b--light-blue bw3">
+          <div><img src="assets/lake.jpeg"></div>
+          <div><img src="assets/florida-swamp.jpg" style="max-height: 537px"></div>
+          <div>three</div>
         </div>
       </div>
     </section>
@@ -51,7 +54,8 @@
     <main class="py4">
       <div class="container">
         <div class="Grid Grid--gutters">
-          <div class="Grid-cell order-1">
+
+          <section class="Grid-cell order-1" id="main-content">
             <div class="Grid Grid--column Grid--gutters">
               <div class="Grid-cell">
                 <div class="mb1 p1 bg-light-gray">
@@ -81,15 +85,17 @@
                 </div>
               </div>
             </div>
-          </div>
-          <div class="Grid-cell Grid-cell--25">
+          </section>
+
+          <aside class="Grid-cell Grid-cell--25" id="side">
             <div class="p1 bg-light-gray">
               <h2 class="h3">Title one</h2>
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore eligendi quas saepe recusandae cumque vero rerum amet hic in porro aliquam eaque voluptates, non ex. Repudiandae a accusamus dolore mollitia!</p>
               <h2 class="h3">Another title</h2>
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti, tempore minus id quae accusantium ducimus voluptates quam repellendus enim facere voluptate libero dolor cupiditate saepe nihil, quia, veritatis ipsam ex.</p>
             </div>
-          </div>
+          </aside>
+
         </div>
       </div>
     </main>
@@ -269,6 +275,17 @@
         </a>
       </div>
     </footer>
+
+    <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="//cdn.jsdelivr.net/jquery.slick/1.3.15/slick.min.js"></script>
+
+    <script>
+      $('.slick-carousel').slick({
+        arrows: false,
+        dots: true
+      });
+    </script>
 
   </body>
 
