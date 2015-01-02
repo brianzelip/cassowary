@@ -17,6 +17,19 @@
 
 }
 
+/* extending Basscss' _base_typography.scss */
+.serif {
+  font-family: $serif-font-family;
+}
+
+.sans {
+  font-family: $sans-font-family;
+}
+
+.mono {
+  font-family: $monospace-font-family;
+}
+
 /* extending Basscss' _utility-white-space.scss */
 .pbone {
   padding-bottom: $space-one;
@@ -58,9 +71,50 @@
   padding-bottom: $space-5;
 }
 
+.plone {
+  padding-left: $space-one;
+}
 
-/* Philip Walton's Solvd By Flexbox Grid System */
-.Grid {
+.pltwo {
+  padding-left: $space-two;
+}
+
+.plthree {
+  padding-left: $space-three;
+}
+
+.plfour {
+  padding-left: $space-four;
+}
+
+.plfive {
+  padding-left: $space-five;
+}
+
+.pl1 {
+  padding-left: $space-1;
+}
+
+.pl2 {
+  padding-left: $space-2;
+}
+
+.pl3 {
+  padding-left: $space-3;
+}
+
+.pl4 {
+  padding-left: $space-4;
+}
+
+.pl5 {
+  padding-left: $space-5;
+}
+/* Philip Walton's Solved By Flexbox Grid System
+ * with some modification to the specified width flex items
+ */
+.Grid,
+.Grid--column {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -71,6 +125,9 @@
   list-style: none;
   margin: 0;
   padding: 0;
+}
+.Grid--column {
+  flex-direction: column;
 }
 .Grid-cell {
   -webkit-box-flex: 1;
@@ -128,17 +185,20 @@
   -webkit-flex: 0 0 100%;
   -ms-flex: 0 0 100%;
   flex: 0 0 100%}
-.Grid--1of2>.Grid-cell {
+
+/* begin modification of solved by flexbox's grid flex items widths */
+
+.Grid-cell--50 {
   -webkit-box-flex: 0;
   -webkit-flex: 0 0 50%;
   -ms-flex: 0 0 50%;
   flex: 0 0 50%}
-.Grid--1of3>.Grid-cell {
+.Grid-cell--33 {
   -webkit-box-flex: 0;
   -webkit-flex: 0 0 33.3333%;
   -ms-flex: 0 0 33.3333%;
   flex: 0 0 33.3333%}
-.Grid--1of4>.Grid-cell {
+.Grid-cell--25 {
   -webkit-box-flex: 0;
   -webkit-flex: 0 0 25%;
   -ms-flex: 0 0 25%;
@@ -332,4 +392,16 @@
   .large-Grid--gutters3x > .Grid-cell {
     padding-left: 3em;
   }
+}
+
+.justify-s-around {
+  justify-content: space-around;
+}
+
+.justify-s-between {
+  justify-content: space-between;
+}
+
+.justify-center {
+ justify-content: center; 
 }
